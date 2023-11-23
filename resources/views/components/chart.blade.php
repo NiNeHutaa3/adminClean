@@ -8,23 +8,25 @@
     <script>
         // Ambil data dari controller atau siapkan data di sini
         var chartData = {
-            labels: ["Data1", "Data2", "Data3", "Data4", "Data5"],
+            labels: ["Senin", "Selasa", "Rabu", "Kamis", "Jumat" , "Sabtu"],
             datasets: [{
                 label: 'Jumlah Pesanan Harian',
-                data: [12, 19, 3, 5, 2], // Ganti ini dengan data yang sesuai
+                data: [12, 15, 7, 5, 10, 17], // Ganti ini dengan data yang sesuai
                 backgroundColor: [
                     'rgba(255, 99, 132, 0.2)',
                     'rgba(54, 162, 235, 0.2)',
                     'rgba(255, 206, 86, 0.2)',
                     'rgba(75, 192, 192, 0.2)',
-                    'rgba(153, 102, 255, 0.2)'
+                    'rgba(153, 102, 255, 0.2)',
+                    'rgba(255, 159, 64, 0.2)'
                 ],
                 borderColor: [
                     'rgba(255,99,132,1)',
                     'rgba(54, 162, 235, 1)',
                     'rgba(255, 206, 86, 1)',
                     'rgba(75, 192, 192, 1)',
-                    'rgba(153, 102, 255, 1)'
+                    'rgba(153, 102, 255, 1)',
+                    'rgba(255, 159, 64, 1)'
                 ],
                 borderWidth: 1
             }]

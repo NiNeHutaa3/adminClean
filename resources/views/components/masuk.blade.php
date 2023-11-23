@@ -9,7 +9,7 @@
     <!-- Bagian Kanan -->
     <div class="flex space-x-8">
         <a href="/detail" 
-            class="bg-red-50 text-grey px-4 py-2 rounded">Detail</a>
-        <button class="bg-red-50 text-grey px-4 py-2 rounded">Terima</button>
+            class="bg-red-400 text-white px-4 py-2 rounded">Detail</a>
+        <button class="bg-blue-400 text-white px-4 py-2 rounded">Terima</button>
     </div>
 </div>

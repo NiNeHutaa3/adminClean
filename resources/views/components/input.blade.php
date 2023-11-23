@@ -13,7 +13,7 @@
     <h3 class="text-xl font-bold mb-2">Items</h3>
 
 
-    <p class="mb-1">Baris teks pertama di bawah Judul Item</p>
-    <p class="mb-1">Baris teks kedua di bawah Judul Item</p>
-    <p class="mb-1">Baris teks ketiga di bawah Judul Item</p>
+    <p class="mb-1">10x Kemeja</p>
+    <p class="mb-1">20x Celana</p>
+    <p class="mb-1">15x T-shirt</p>
 </div>

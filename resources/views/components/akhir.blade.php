@@ -1,29 +1,60 @@
 <!-- resources/views/components/akhir.blade.php -->
 
-<div class="bg-white rounded-lg overflow-hidden shadow-lg p-6  mx-auto">
-    <h2 class="text-2xl font-bold mb-4">Laporan Akhir</h2>
+<!-- Pastikan Anda telah menyertakan link FontAwesome di bagian head HTML Anda -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-...">
 
-    <div class="mb-4">
-        <p class="font-bold">Judul:</p>
-        <p>{{ $judul }}</p>
+<div class="container mx-auto p-8" id="printableArea">
+    <h1 class="text-3xl font-bold text-center mb-6">Laporan Pemesanan</h1>
+
+    <div class="overflow-x-auto">
+        <table class="w-full bg-white border-collapse border border-gray-300 rounded-lg">
+            <thead class="bg-gray-200 divide-y divide-gray-300">
+                <tr>
+                    <td class="py-2 text-lg px-4">No</td>
+                    <td class="py-2 text-lg px-4">Nama Pemesan</td>
+                    <td class="py-2 text-lg px-4">Pelayanan</td>
+                    <td class="py-2 text-lg px-4">Status Pemesanan</td>
+                    <td class="py-2 text-lg px-4">Pembayaran</td>
+                    <td class="py-2 text-lg px-4">Evaluasi</td>
+                </tr>
+            </thead>
+            <tbody class="divide-y divide-gray-300">
+                <!-- Isi tabel di sini -->
+                <tr>
+                    <td class="py-2 px-4">1</td>
+                    <td class="py-2 px-4">John Doe</td>
+                    <td class="py-2 px-4">Layanan A</td>
+                    <td class="py-2 px-4">Selesai</td>
+                    <td class="py-2 px-4">Lunas</td>
+                    <td class="py-2 px-4">5/5</td>
+                </tr>
+                <!-- Tambahkan baris lain jika diperlukan -->
+            </tbody>
+        </table>
     </div>
 
-    <div class="mb-4">
-        <p class="font-bold">Nama Pelanggan:</p>
-        <p>{{ $namaPelanggan }}</p>
+    <div class="flex justify-end mt-6">
+        <button id="printButton" class="flex items-center bg-green-600 text-white py-2 px-4 rounded">
+            <i class="fas fa-print mr-2"></i> Cetak
+        </button>
     </div>
 
-    <div class="mb-4">
-        <p class="font-bold">Tanggal Pesanan:</p>
-        <p>{{ $tanggalPesanan }}</p>
-    </div>
+    <script>
+        document.getElementById('printButton').addEventListener('click', function() {
+            var printContents = document.getElementById('printableArea').innerHTML;
+            var originalContents = document.body.innerHTML;
+            document.body.innerHTML = printContents;
+            window.print();
+            document.body.innerHTML = originalContents;
+        });
+    </script>
 
-    <div>
-        <p class="font-bold">Barang yang Dilayani:</p>
-        <ul>
-            @foreach($barang as $item)
-                <li>{{ $item }}</li>
-            @endforeach
-        </ul>
-    </div>
+    <style>
+        @media print {
+            /* Sembunyikan tombol cetak saat dicetak */
+            #printButton {
+                display: none;
+            }
+        }
+    </style>
 </div>

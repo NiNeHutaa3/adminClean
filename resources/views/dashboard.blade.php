@@ -15,7 +15,7 @@
             <div class="max-w-7xl mx-auto sm:px-6 lg:px-7">
                 <div class="flex space-x-8"> <!-- Menambahkan space-x-8 untuk memberikan jarak yang lebih besar antara card -->
                     <!-- Card 1 -->
-                    <div class="bg-white overflow-hidden shadow-sm sm:rounded-lg h-full flex-1 p-4">
+                    <div class="bg-red-300 overflow-hidden shadow-sm sm:rounded-lg h-full flex-1 p-4">
                         <div class="p-6 text-gray-900 dark:text-gray-100">
                             <!-- Struktur HTML untuk teks di kiri dan di kanan -->
                             <div class="flex justify-between">
@@ -30,7 +30,7 @@
                     </div>
 
                     <!-- Card 2 -->
-                    <div class="bg-white overflow-hidden shadow-sm sm:rounded-lg h-full flex-1 p-4">
+                    <div class="bg-yellow-300 overflow-hidden shadow-sm sm:rounded-lg h-full flex-1 p-4">
                         <div class="p-6 text-gray-900 dark:text-gray-100">
                             <!-- Struktur HTML untuk teks di kiri dan di kanan -->
                             <div class="flex justify-between">
@@ -45,7 +45,7 @@
                     </div>
 
                     <!-- Card 3 -->
-                    <div class="bg-white overflow-hidden shadow-sm sm:rounded-lg h-full flex-1 p-4">
+                    <div class="bg-green-300 overflow-hidden shadow-sm sm:rounded-lg h-full flex-1 p-4">
                         <div class="p-6 text-gray-900 dark:text-gray-100">
                             <!-- Struktur HTML untuk teks di kiri dan di kanan -->
                             <div class="flex justify-between">
