@@ -26,6 +26,6 @@
     </div>
 
     <div class="mt-8 text-right">
-        <a href="/input" class="text-blue-500 hover:underline">Selanjutnya</a>
+        <a href="/proses" class="text-blue-500 hover:underline">Selanjutnya</a>
     </div>
 </div>

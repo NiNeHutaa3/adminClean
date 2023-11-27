@@ -29,13 +29,38 @@ class DetailController extends Controller
     }
 }
 
-class InputController extends Controller
+class MasukController extends Controller
+{
+    public function showUpdatePage()
+    {
+        return view('masuk');
+    }
+}
+
+class ProsesController extends Controller
 {
     public function showUpdatePage()
     {
         return view('proses');
     }
 }
+
+class SelesaiController extends Controller
+{
+    public function showUpdatePage()
+    {
+        return view('selesai');
+    }
+}
+
+class InputController extends Controller
+{
+    public function showUpdatePage()
+    {
+        return view('input');
+    }
+}
+
 
 class LaporanController extends Controller
 {

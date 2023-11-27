@@ -4,8 +4,11 @@ use App\Http\Controllers\ProfileController;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\UpdateController;
 use App\Http\Controllers\DetailController;
-use App\Http\Controllers\InputController;
+use App\Http\Controllers\ProsesController;
 use App\Http\Controllers\LaporanController;
+use App\Http\Controllers\MasukController;
+use App\Http\Controllers\SelesaiController;
+use App\Http\Controllers\InputController;
 
 
 /*
@@ -24,7 +27,9 @@ Route::get('/', function () {
 });
 
 Route::get('/dashboard', function () {return view('dashboard');})->middleware(['auth', 'verified'])->name('dashboard');
-Route::get('/update', function () {return view('update');})->middleware(['auth', 'verified'])->name('update');
+Route::get('/proses', function () {return view('proses');})->middleware(['auth', 'verified'])->name('proses');
+Route::get('/masuk', function () {return view('masuk');})->middleware(['auth', 'verified'])->name('masuk');
+Route::get('/selesai', function () {return view('selesai');})->middleware(['auth', 'verified'])->name('selesai');
 Route::get('/laporan', function () {return view('laporan');})->middleware(['auth', 'verified'])->name('laporan');
 
 Route::middleware('auth')->group(function () {
